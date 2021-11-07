@@ -1,8 +1,8 @@
-package autobot_orders
+package orders
 
 import (
 	"context"
-	common "github.com/dev4fun007/autobot-common"
+	"github.com/dev4fun007/autobot-common"
 	"github.com/rs/zerolog/log"
 )
 

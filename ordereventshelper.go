@@ -1,4 +1,4 @@
-package autobot_orders
+package orders
 
 import (
 	common "github.com/dev4fun007/autobot-common"
