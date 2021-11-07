@@ -18,7 +18,7 @@ type OrderProcessorService struct {
 	brokerAction common.BrokerAction
 }
 
-func NewOrderProcessor(action common.BrokerAction, repository common.Repository) *OrderProcessorService {
+func NewOrderProcessorService(action common.BrokerAction, repository common.Repository) *OrderProcessorService {
 	return &OrderProcessorService{
 		limitChan:    make(chan common.RequestLimitOrder, OrderBatchSize),
 		marketChan:   make(chan common.RequestMarketOrder, OrderBatchSize),
