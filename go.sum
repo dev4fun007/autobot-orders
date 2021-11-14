@@ -3,6 +3,10 @@ github.com/dev4fun007/autobot-common v0.0.0-20211101175057-90b58a1585c0 h1:6nFrj
 github.com/dev4fun007/autobot-common v0.0.0-20211101175057-90b58a1585c0/go.mod h1:+wyMT8/USoCFhVXxzUPeNCza7muUsFcyN9+JqKwhEQA=
 github.com/dev4fun007/autobot-common v0.0.0-20211103170448-714c46236c84 h1:dgAfUkglBtzRi5GwSOnkKFNsUGyWxABCgGFgZNYamE8=
 github.com/dev4fun007/autobot-common v0.0.0-20211103170448-714c46236c84/go.mod h1:+wyMT8/USoCFhVXxzUPeNCza7muUsFcyN9+JqKwhEQA=
+github.com/dev4fun007/autobot-common v0.0.0-20211114074717-2a35cf1b4679 h1:nanlvdt1YodOGIfYw6Y9k2eJBvb9/0cFzykrHR4D/Js=
+github.com/dev4fun007/autobot-common v0.0.0-20211114074717-2a35cf1b4679/go.mod h1:+wyMT8/USoCFhVXxzUPeNCza7muUsFcyN9+JqKwhEQA=
+github.com/dev4fun007/autobot-common v0.0.0-20211114075119-cd7a49677013 h1:O33VeoGrvhP3ulCwwzQ6vts8FZgczsNIESeUBx7iFPI=
+github.com/dev4fun007/autobot-common v0.0.0-20211114075119-cd7a49677013/go.mod h1:+wyMT8/USoCFhVXxzUPeNCza7muUsFcyN9+JqKwhEQA=
 github.com/godbus/dbus/v5 v5.0.4/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/rs/xid v1.3.0/go.mod h1:trrq9SKmegXys3aeAKXMUTdJsYXVwGY3RLcfgqegfbg=

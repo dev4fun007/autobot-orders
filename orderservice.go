@@ -52,12 +52,12 @@ func (processor OrderProcessorService) StartOrderService(ctx context.Context) {
 							Str("order-type", "Market").
 							Err(err).
 							Msg("error processing order")
-						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, mo.Config, err.Error())
+						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, mo.Config, mo.ActionType, err.Error())
 					} else {
 						log.Info().Str(common.LogComponent, OrderServiceTag).
 							Str("order-type", "Market").
 							Msg("order processed, creating event")
-						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, mo.Config, "")
+						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, mo.Config, mo.ActionType, "")
 					}
 					_ = processor.repository.Save(ctx, event)
 				}
@@ -70,12 +70,12 @@ func (processor OrderProcessorService) StartOrderService(ctx context.Context) {
 							Str("order-type", "Limit").
 							Err(err).
 							Msg("error processing order")
-						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, lo.Config, err.Error())
+						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, lo.Config, lo.ActionType, err.Error())
 					} else {
 						log.Info().Str(common.LogComponent, OrderServiceTag).
 							Str("order-type", "Limit").
 							Msg("order processed, creating event")
-						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, lo.Config, "")
+						event = CreateOrderEvent(processor.brokerAction.GetBrokerName(), orderResult, lo.Config, lo.ActionType, "")
 					}
 					_ = processor.repository.Save(ctx, event)
 				}
